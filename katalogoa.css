@@ -48,7 +48,7 @@ header {
     margin-left: 10px;
 }
 .menua li a:hover {
-    color: #FFDD57;
+    color: rebeccapurple;
     
     
 }
@@ -69,18 +69,18 @@ footer {
 main section{
     
     display: flex;
-    width: 49%;
+    width: 51%;
     flex-wrap: wrap;
     align-content: end;
     float: right;
     padding: 10px;
     margin: 10px;
     border: 1px dashed;
+    
 }
 section img{
     max-width: 100%;
-    align-items: center;
-    background-color: transparent;
+    
     
 
 }
@@ -90,12 +90,14 @@ aside{
     border: 1px dashed;
     display: grid;
     margin: 10px;
-    padding-left: px;
+    align-items: center;
+    
 }
-aside img{
-    max-width: 40%;
-    align-content: center;
-    grid-area: wrap;
+aside img {
+    flex-wrap:wrap;
+    padding-bottom: 5px;
+    
+    
     
 }
 .gorputza{
@@ -103,10 +105,7 @@ aside img{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 15px;
     clear: both;
-.eskerreko-gorputza{
-    display: block;
-    
-}
+
 }
