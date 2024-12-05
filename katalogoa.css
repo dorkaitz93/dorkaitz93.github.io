@@ -1,38 +1,46 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 15px;
     background: linear-gradient(to top, white, #FFFDD0);
     color: #333;
     line-height: 1.6;
+    max-width: 1200px;
+    padding: 0 auto;
     
 }
 
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    padding: 0.8333333333333333% 1.666666666666667%;
     background: linear-gradient(to right, #11cb39, #2575fc);
-    color: white;
+    width: 100%;
 }
 
-.eskerra img {
-    max-width: 150px;
+header img {
+    width: 36.66666666666667%;
 }
 
 .eskuma {
     display: flex;
     align-items: center;
-    gap: 15px;
+    
 }
-
+button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    margin-left: 0.8333333333333333%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
 .menua {
     list-style: none;
     display: flex;
     margin: 0;
-    padding-left: 5px;
-    padding-right: 250px;
+    padding-left: 0.4166666666666667%;
+    padding-right: 20.83333333333333%;
     
 }
 
@@ -43,8 +51,7 @@ header {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    transition: color 0.3s ease;
-    padding: 2px 8px;
+    transition: color 1s ease-out;
     margin-left: 10px;
 }
 .menua li a:hover {
@@ -53,28 +60,31 @@ header {
     
 }
 
-#karrito, #perfila {
-    width: 30px;
-    height: auto;
+#karrito {
+    position: relative;
+    left: 130%;
+    width: 5.859375%;
+    
+
 }
 
 footer {
+    width: 100%;
     clear: both;
     text-align: center;
     background-color: #2575fc;
     color: white;
-    padding: 20px;
+    padding: 1.666666666666667%;
 }
 
 main section{
-    
     display: flex;
-    width: 51%;
+    width: 49%;
     flex-wrap: wrap;
     align-content: end;
     float: right;
-    padding: 10px;
-    margin: 10px;
+    padding: 0.8333333333333333%;
+    margin: 0.8333333333333333%;
     border: 1px dashed;
     
 }
@@ -89,13 +99,13 @@ aside{
     width: 45%;
     border: 1px dashed;
     display: grid;
-    margin: 10px;
+    margin: 0.8333333333333333%;
     align-items: center;
     
 }
 aside img {
     flex-wrap:wrap;
-    padding-bottom: 5px;
+    padding-bottom: 0.4166666666666667%;
     
     
     
@@ -105,7 +115,7 @@ aside img {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 1.6%;
     clear: both;
 
 }
