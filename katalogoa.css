@@ -113,8 +113,8 @@ aside img {
 .gorputza{
     max-width: 50%;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 2fr);
     gap: 1.6%;
     clear: both;
 

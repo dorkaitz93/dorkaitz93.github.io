@@ -33,8 +33,8 @@ header img {
     margin: 0;
     padding-left: 0.4166666666666667%;
     padding-right: 20.83333333333333%;
-    
-    
+    width: 100%;
+    gap: 0.50%;
 }
 
 .menua li a {
@@ -45,7 +45,7 @@ header img {
     color: rgb(0, 0, 0);
     font-weight: bold;
     transition: color 1s ease-out;
-    margin-left: 10px;  
+    
 }
 .menua li a:hover {
     color: rebeccapurple;
@@ -74,23 +74,23 @@ form {
 
 .formulario {
     border: none;
-    padding: 20px;
+    padding: 0.8333333333333333%;
     background-color: #f9f9f9;
-    border-radius: 8px;
+    border-radius: 0.8333333333333333%;
 }
 
 legend {
-    font-size: 1.25rem;
+    font-size: 100%;
     color: #444;
-    margin-bottom: 15px;
+    margin-bottom: 0.8333333333333333%;
     font-weight: bold;
 }
 
 label {
     display: block;
-    font-size: 1rem;
+    font-size: 100%;
     color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 0.8333333333333333%;
     text-align: left;
 }
 
@@ -101,12 +101,12 @@ input[type="datetime"],
 input[type="number"],
 select {
     width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+    padding: 0.8333333333333333%;
+    margin: 0.8333333333333333%, 0;
+    border-radius: 0.8333333333333333%;
     border: 1px solid #ddd;
     background-color: #fff;
-    font-size: 1rem;
+    font-size: 100%;
 }
 
 input[type="text"]:focus,
@@ -116,27 +116,27 @@ input[type="datetime"]:focus,
 select:focus {
     border-color: #0066cc;
     outline: none;
-    box-shadow: 0 0 3px rgba(0, 102, 204, 0.3);
+    box-shadow: 0 0 0.8333333333333333% rgba(0, 102, 204, 0.3);
 }
 
 select {
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.8333333333333333%;
+    border-radius: 0.8333333333333333%;
 }
 
 input[type="checkbox"] {
-    margin-right: 10px;
+    margin-right: 0.8333333333333333%;
 }
 button {
     background-color: #0066cc;
     color: white;
-    padding: 12px 20px;
+    padding: 1%;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius:  0.8333333333333333%;
+    font-size: 0.8333333333333333%;
     cursor: pointer;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0.8333333333333333%;
     transition: background-color 0.3s ease;
 }
 
@@ -145,7 +145,7 @@ button:hover {
 }
 br {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.8333333333333333%;
 }
 
 select[size="4"] {
