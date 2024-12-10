@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kontua.css">
+    <title>Kontua</title>
+</head>
+<body>
+    <header>
+        <div class="eskerra">
+            <img id="Logo" src="img/logoa transparente.png" alt="Logoa">
+        </div>
+        <div class="eskuma">
+            <a href="karritoa.html"><img id="karrito" src="img/carro-de-la-carretilla.png" alt="Karritoa"></a>
+        </div>
+    </header>
+    <nav>
+      <ul class="menua">
+          <li><a href="index.html">Hasiera</a></li>
+          <li><a href="katalogoa.html">Katalogoa</a></li>
+          <li><a href="">Entrenatu</a></li>
+          <li><a href="">Adoptatu</a></li>
+          <li><a href="kontua.html">Nire kontua</a></li>
+      </ul>
+  </nav>
+  <main>
+    <h1>Sortu zure kontua</h1>
+    <form action="" method="" >
+        <fieldset class="formulario" style="border: 1px solid">
+            <legend>Zure datuak</legend>
+            <label for="izena">Izena</label>
+            <input type="text" name="Izena" placeholder="Izena" required>
+
+            <label for="Abizena">Abizenak</label>
+            <input type="text" name="Abizena" placeholder="Abizenak" required>
+
+            <label for="data">Jaiotze-data</label>
+            <input type="datetime" name="data" placeholder="Data" required>
+
+            <label for="Helbidea">Helbidea</label>
+            <input type="text" name="Helbidea" placeholder="Helbidea">
+
+            <label for="Herrialdea">Herrialdea</label>
+            <input type="text" name="Herrialdea" placeholder="Herrialdea" required>
+            
+            <label for="Probintzia">Probintzia</label>
+            <input type="text" name="Probintzia" placeholder="Probintzia"required>
+
+            <label for="Telefonoa">Telefonoa</label>
+            <input type="tel" id="Telefonoa" name="Telefonoa" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Telefonoa" required>
+            
+            <label for="Emaila">Emaila</label>
+            <input type="email" name="Email" placeholder="Emaila" required>
+
+            <label for="Tarjeta">Tarjeta(ez da beharrezkoa)</label>
+            <input type="text" name="Tarjeta" placeholder="Tarjeta">
+
+            <label for="cvv">CVV</label>
+            <input type="text" inputmode="numeric" placeholder="CVV" min="3" max="3"><br>
+            Zemat animali daukazu etxean?<br>
+            <select size 4>
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+            </select>
+            <br>
+            Ze animali mota?
+            <br>
+            <select size="4">
+                <option >Txakurrak</option>
+                <option >Katuak</option>
+                <option >Txoriak</option>
+                <option >Arrañak</option>
+            </select>
+            <br>
+            <input type="checkbox" name="informazio">Doggy shoppeko informazio gehiago jazo nahi dut.
+            <br>
+            <input type="checkbox" name="">Nire informazioa DoggyShop base datuan sartzeko baimenda ematen dut.
+            <br>
+            <button>Bidali</button>
+        </fieldset>
+  </main>
+  <footer>
+    <p>&copy; 2024 DoggyShop.inc</p>
+</footer>
+</body>
+</html>

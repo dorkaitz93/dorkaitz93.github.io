@@ -4,14 +4,14 @@ body {
     color: #333;
     line-height: 1.6;
     max-width: 1200px;
-    padding: 0 auto;
+    margin: 0 auto;
     
 }
 
 
 header {
     display: flex;
-    padding: 0.8333333333333333% 1.666666666666667%;
+    padding: 0.8333333333333333%,0.8333333333333333%;
     background: linear-gradient(to right, #11cb39, #2575fc);
     width: 100%;
 }
