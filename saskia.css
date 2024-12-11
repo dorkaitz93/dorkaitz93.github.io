@@ -32,9 +32,9 @@ header img {
     display: flex;
     margin: 0;
     padding-left: 0.4166666666666667%;
-    padding-right: 20.83333333333333%;
-    width: 160%;
-    gap: 0.50%;
+    
+    width: 100%;
+    gap: 0.75%;
 }
 
 .menua li a {
@@ -45,6 +45,8 @@ header img {
     color: rgb(0, 0, 0);
     font-weight: bold;
     transition: color 1s ease-out;
+    margin-right: 1px;
+    
     
 }
 .menua li a:hover {
@@ -66,45 +68,4 @@ footer {
     color: white;
     padding: 0.8333333333333333% ,0.8333333333333333%;
     width: 100%;
-}
-main{
-    margin: 0.8333333333333333%;
-    flex-wrap: wrap;
-    width: 49%;
-    border: 1px dashed;
-    text-align: center;
-    float: left;
-}
-main img{
-    width: 50%;
-}
-aside{
-    width: 47.3%;
-    border: 1px dashed;
-    float: right;
-    margin: 0.8333333333333333%;
-    text-decoration: none;
-    outline: none;
-   
-    
-
-}
-aside img{
-    width: 40%;
-    display:inline-block;
-    padding: 0.8333333333333333%;
-}
-aside a{
-    text-decoration: none;
-
-   
-}
-button {
-    background-color: #04AA6D;
-    color: white;
-    margin-left: 0.8333333333333333%;
-    text-align: center;
-    display: inline-block;
-    font-size: larger;
-    margin: 0.8333333333333333%;
 }

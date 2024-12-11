@@ -27,7 +27,6 @@ header img {
 }
 button {
     background-color: #04AA6D; /* Green */
-    border: none;
     color: white;
     margin-left: 0.8333333333333333%;
     text-align: center;
@@ -106,6 +105,7 @@ aside{
 aside img {
     flex-wrap:wrap;
     padding-bottom: 0.4166666666666667%;
+    background-color: grey;
     
     
     
