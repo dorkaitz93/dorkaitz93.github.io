@@ -69,3 +69,54 @@ footer {
     padding: 0.8333333333333333% ,0.8333333333333333%;
     width: 100%;
 }
+.saskia {
+
+    margin: 0.8333333333333333%;
+    text-align: center;
+   
+}
+table th{
+
+    text-align: center;
+    width: 50%;
+    border:1px solid black;
+    margin: 0.8333333333333333%;
+    gap: 0.8333333333333333%;
+}
+tbody td{
+    border: 1px solid black;
+}
+#guztira{
+    border: 1px solid black;
+}
+.eskaria{
+    text-align: start;
+    width: 45%;
+    display: block;
+    margin: 0.8333333333333333%;
+    padding-right: 0.8333333333333333%;
+    padding-bottom:0.8333333333333333%;;
+    
+}
+label{
+    padding-right: 0.8333333333333333%;
+    padding-bottom: 0.8333333333333333%;
+}
+ img{
+    width: 20%;
+    margin-left: 0.8333333333333333%;
+    
+}
+.mota{
+    align-items: center;
+    justify-content: center;
+}
+button {
+    background-color: #04AA6D; /* Green */
+    color: white;
+    margin-left: 0.8333333333333333%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
