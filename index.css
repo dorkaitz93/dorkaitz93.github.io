@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to top, white, #FFFDD0);
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+ /* Corregido padding */
+    background: linear-gradient(to right, #11cb39, #2575fc);
+    width: 100%;
+}
+
+header img {
+    width: 36.66666666666667%; /* Tamaño ajustado a tu ejemplo */
+}
+
+.menua {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0.4166666666666667%;
+    padding-right: 20.83333333333333%;
+}
+
+.menua li a {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    align-content: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color 1s ease-out;
+    margin-left: 10px;
+}
+
+.menua li a:hover {
+    color: rebeccapurple;
+}
+
+#karrito {
+    position: relative;
+    left: 130%;
+    width: 5.859375%;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 1.666666666666667%; /* Gap ajustado */
+    margin-bottom: 2.5%; /* Ajustado */
+}
+
+.section1 img {
+    width: 25%; /* Ajustado a tu ejemplo */
+    border-radius: 0.8333333333333333%;
+}
+
+.section1-textua h2 {
+    color: #6a11cb;
+}
+
+#ongietorria {
+    text-align: center;
+    margin-top: 1.666666666666667%;
+    padding: 1.666666666666667%; /* Ajustado */
+}
+
+#ongietorria h1 {
+    color: #2575fc;
+}
+
+.katua {
+    margin: 1.666666666666667% auto;
+    max-width: 33.33333333333333%; /* Ajustado */
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #2575fc;
+    color: white;
+    padding: 0.8333333333333333%, 0.8333333333333333%; /* Ajustado */
+    width: 100%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columnas iguales */
+    grid-gap: 10px;
+}
+
+.eskerra {
+    max-width: 100%;
+    grid-column: 1 / span 3; /* Ocupa 3 columnas */
+    grid-row: 1 / 2;
+    img{
+        max-width: 100%;
+    }
+}
+
+.erdia {
+    grid-row: 1 / 2;
+    grid-column: 4 / span 6; /* Comienza en la columna 4 y ocupa 6 columnas */
+    max-width: 100%;
+}
+
+.right {
+    grid-row: 1 / 2;
+    grid-column: 10 / span 3; /* Comienza en la columna 10 y ocupa 3 columnas */
+    max-width: 100%;
+    img{
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); /* 12 columnas de igual tamaño */
+        grid-template-rows: auto; /* Filas automáticas */
+    }
+
+    .eskerra {
+        grid-column: span 3; /* Ocupa 3 columnas */
+        grid-row: 1; /* Primera fila */
+    }
+
+    .erdia {
+        grid-column: 4 / span 9; /* Comienza en la columna 4 y ocupa 9 columnas */
+        grid-row: 1; /* Primera fila */
+    }
+
+    .right {
+        grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+        grid-row: 2; /* Segunda fila */
+    }
+}
+
+@media (max-width: 600px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr; /* Todo en una sola columna */
+        grid-template-rows: auto; /* Filas automáticas */
+    }
+
+    .eskerra {
+        grid-column: 1 / -1; /* Ocupa toda la fila */
+        grid-row: 1; /* Primera fila */
+    }
+
+    .erdia {
+        grid-column: 1 / -1; /* Ocupa toda la fila */
+        grid-row: 2; /* Segunda fila */
+    }
+
+    .right {
+        grid-column: 1 / -1; /* Ocupa toda la fila */
+        grid-row: 3; /* Tercera fila */
+    }
+}

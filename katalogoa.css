@@ -1,3 +1,10 @@
+/* Estilo base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el borde no sumen al ancho total de los elementos */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to top, white, #FFFDD0);
@@ -5,15 +12,14 @@ body {
     line-height: 1.6;
     max-width: 1200px;
     margin: 0 auto;
-    
 }
-
 
 header {
     display: flex;
-    padding: 0.8333333333333333%,0.8333333333333333%;
+    padding: 0.8333333333333333%;
     background: linear-gradient(to right, #11cb39, #2575fc);
     width: 100%;
+    justify-content: center;
 }
 
 header img {
@@ -23,8 +29,9 @@ header img {
 .eskuma {
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 }
+
 button {
     background-color: #04AA6D; /* Green */
     color: white;
@@ -32,15 +39,14 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    
 }
+
 .menua {
     list-style: none;
     display: flex;
     margin: 0;
     padding-left: 0.4166666666666667%;
     padding-right: 20.83333333333333%;
-    
 }
 
 .menua li a {
@@ -53,18 +59,15 @@ button {
     transition: color 1s ease-out;
     margin-left: 10px;
 }
+
 .menua li a:hover {
     color: rebeccapurple;
-    
-    
 }
 
 #karrito {
     position: relative;
     left: 130%;
     width: 5.859375%;
-    
-
 }
 
 footer {
@@ -76,46 +79,158 @@ footer {
     padding: 1.666666666666667%;
 }
 
-main section{
-    display: flex;
-    width: 49%;
-    flex-wrap: wrap;
-    align-content: end;
+main {
+    display: flex; /* Flex para hacer que los elementos estén uno al lado del otro */
+    justify-content: space-between; /* Para separar main y aside */
+    flex-wrap: wrap; /* Asegura que se ajusten si no hay suficiente espacio */
+    padding: 1.6%;
+    border: 1px dashed;
+    box-sizing: border-box;
+    max-width: 48%;
     float: right;
-    padding: 0.8333333333333333%;
-    margin: 0.8333333333333333%;
-    border: 1px dashed;
-    
 }
-section img{
+
+section img {
     max-width: 100%;
-    
-    
-
+    height: auto; /* Asegura que las imágenes mantengan sus proporciones */
 }
-aside{
-    float: left;
-    width: 45%;
+
+aside {
+    display: flex; /* Flex para alinear el contenido dentro del aside */
+    flex-direction: column; /* Para que los elementos dentro del aside se apilen */
+    width: 48%; /* Ocupa casi el 50% de la pantalla */
+    margin-left: 2%; /* Espacio entre main y aside */
     border: 1px dashed;
-    display: grid;
-    margin: 0.8333333333333333%;
-    align-items: center;
     
 }
-aside img {
-    flex-wrap:wrap;
-    padding-bottom: 0.4166666666666667%;
-    background-color: grey;
-    
-    
-    
-}
-.gorputza{
-    max-width: 50%;
-    display: grid;
-    grid-template-rows: repeat(3, 2fr);
-    grid-template-columns: repeat(3, 2fr);
-    gap: 1.6%;
-    clear: both;
 
+aside img {
+    width: 100%;
+    height: auto;
+}
+
+/* Layout con Grid para los productos */
+.gorputza {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+}
+
+/* Media Queries para hacerlo responsivo */
+
+/* Pantallas pequeñas (smartphones) */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header img {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .menua {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menua li {
+        margin-bottom: 10px;
+    }
+
+    main section,
+    aside {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .eskuma {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #karrito {
+        left: auto;
+        position: relative;
+        width: 30%;
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    .gorputza {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Pantallas medianas (tabletas y dispositivos con pantallas medianas) */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menua {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section,
+    aside {
+        width: 48%; /* Hace que main y aside ocupen la mitad de la pantalla */
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .gorputza {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-wrap: nowrap; /* No debería haber ajuste a nuevas filas */
+        justify-content: space-between;
+        max-width: 48;
+    }
+
+    main section,
+    aside {
+        width: 48%; /* Ambos ocupan 48% de la pantalla */
+    }
+
+    .eskuma {
+        display: flex;
+        align-items: center;
+    }
+
+    header img {
+        width: 36.66666666666667%;
+    }
+
+    .menua {
+        display: flex;
+    }
+
+    .menua li {
+        margin-left: 20px;
+    }
+
+    .gorputza {
+        grid-template-columns: repeat(3, 2fr);
+    }
 }

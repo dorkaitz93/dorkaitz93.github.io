@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to top, white, #FFFDD0);
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    padding: 0.8333333333333333% 0.8333333333333333%; /* Corregido el padding */
+    background: linear-gradient(to right, #11cb39, #2575fc);
+    width: 100%;
+}
+
+header img {
+    width: 36.66666666666667%;
+}
+
+.menua {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0.4166666666666667%;
+    padding-right: 20.83333333333333%;
+}
+
+.menua li a {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    align-content: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color 1s ease-out;
+    margin-left: 10px;
+}
+
+.menua li a:hover {
+    color: rebeccapurple;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 1.666666666666667%;
+    margin-bottom: 2.5%;
+}
+
+.section1 img {
+    width: 25%;
+    border-radius: 0.8333333333333333%;
+}
+
+.section1-textua h2 {
+    color: #6a11cb;
+}
+
+#ongietorria {
+    text-align: center;
+    margin-top: 1.666666666666667%;
+    padding: 1.666666666666667%;
+}
+
+#ongietorria h1 {
+    color: #2575fc;
+}
+
+.katua {
+    margin: 1.666666666666667% auto;
+    max-width: 100%;
+}
+
+#txakurra {
+    max-width: 50%;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #2575fc;
+    color: white;
+    width: 100%;
+    
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-6, .col-s-9 {
+    
+    width: 50%; /* Ejemplo, ajuste según tus necesidades */
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+[class*="col-"] {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* Para tabletas: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* Para escritorio: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
