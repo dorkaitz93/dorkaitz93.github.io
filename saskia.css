@@ -45,22 +45,23 @@ header img {
     color: rgb(0, 0, 0);
     font-weight: bold;
     transition: color 1s ease-out;
-    margin-left: 10px;
-    
-    
+    margin-left: 10px; 
 }
+
 .menua li a:hover {
     color: rebeccapurple;
     
     
 }
 
-#karrito {
-    position: relative;
-    left: 130%;
-    width: 5.859375%;
-    
+main table{
+  background: linear-gradient(to top, white, #FFFDD0);
 }
+main{
+    background: linear-gradient(to top, white, #FFFDD0);
+}
+    
+
 footer {
     clear: both;
     text-align: center;
