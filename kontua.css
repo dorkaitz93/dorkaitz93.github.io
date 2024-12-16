@@ -33,8 +33,7 @@ header img {
     margin: 0;
     padding-left: 0.4166666666666667%;
     padding-right: 20.83333333333333%;
-    width: 100%;
-    gap: 0.50%;
+    
 }
 
 .menua li a {
@@ -45,6 +44,7 @@ header img {
     color: rgb(0, 0, 0);
     font-weight: bold;
     transition: color 1s ease-out;
+    margin-left: 10px;
     
 }
 .menua li a:hover {

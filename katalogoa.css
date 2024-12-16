@@ -1,52 +1,34 @@
-/* Estilo base */
+/* Asegúrate de que las imágenes no se desborden */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Asegura que el padding y el borde no sumen al ancho total de los elementos */
-}
-
-body {
+    box-sizing: border-box;
+  }
+  
+  body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to top, white, #FFFDD0);
     color: #333;
     line-height: 1.6;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-header {
+  }
+  
+  header {
     display: flex;
-    padding: 0.8333333333333333%;
+    padding: 0.8333333333333333% ,0.8333333333333333%;
     background: linear-gradient(to right, #11cb39, #2575fc);
     width: 100%;
-    justify-content: center;
-}
-
-header img {
+  }
+  
+  header img{
     width: 36.66666666666667%;
-}
-
-.eskuma {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-button {
-    background-color: #04AA6D; /* Green */
-    color: white;
-    margin-left: 0.8333333333333333%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.menua {
+  }
+  
+  
+ .menua {
     list-style: none;
     display: flex;
     margin: 0;
-    padding-left: 0.4166666666666667%;
-    padding-right: 20.83333333333333%;
+    
 }
 
 .menua li a {
@@ -63,174 +45,106 @@ button {
 .menua li a:hover {
     color: rebeccapurple;
 }
-
-#karrito {
-    position: relative;
-    left: 130%;
-    width: 5.859375%;
-}
-
-footer {
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .gorputza {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .gorputza div {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .gorputza img {
     width: 100%;
+    height: auto;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+  }
+  
+  button.gehitu {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.gehitu:hover {
+    background-color: #45a049;
+  }
+  
+  aside {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .eskerreko-gorputza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .eskerreko-gorputza img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  footer {
     clear: both;
     text-align: center;
     background-color: #2575fc;
     color: white;
-    padding: 1.666666666666667%;
-}
-
-main {
-    display: flex; /* Flex para hacer que los elementos estén uno al lado del otro */
-    justify-content: space-between; /* Para separar main y aside */
-    flex-wrap: wrap; /* Asegura que se ajusten si no hay suficiente espacio */
-    padding: 1.6%;
-    border: 1px dashed;
-    box-sizing: border-box;
-    max-width: 48%;
-    float: right;
-}
-
-section img {
-    max-width: 100%;
-    height: auto; /* Asegura que las imágenes mantengan sus proporciones */
-}
-
-aside {
-    display: flex; /* Flex para alinear el contenido dentro del aside */
-    flex-direction: column; /* Para que los elementos dentro del aside se apilen */
-    width: 48%; /* Ocupa casi el 50% de la pantalla */
-    margin-left: 2%; /* Espacio entre main y aside */
-    border: 1px dashed;
-    
-}
-
-aside img {
+    padding: 0.8333333333333333%, 0.8333333333333333%; /* Ajustado */
     width: 100%;
-    height: auto;
-}
-
-/* Layout con Grid para los productos */
-.gorputza {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    width: 100%;
-}
-
-/* Media Queries para hacerlo responsivo */
-
-/* Pantallas pequeñas (smartphones) */
-@media screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+  }
+  
+  /* Hacer que la página sea responsiva con media queries */
+  @media screen and (max-width: 768px) {
+    .gorputza div {
+      width: 48%;
     }
-
-    header img {
-        width: 80%;
-        margin-bottom: 10px;
-    }
-
-    .menua {
-        flex-direction: column;
-        align-items: center;
-    }
-
+  
     .menua li {
-        margin-bottom: 10px;
+      display: block;
+      margin: 10px 0;
     }
-
-    main section,
-    aside {
-        width: 100%;
-        margin: 10px 0;
-        padding: 10px;
+  
+    .eskerreko-gorputza {
+      flex-direction: row;
+      justify-content: space-around;
     }
-
-    .eskuma {
-        flex-direction: column;
-        align-items: center;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .gorputza div {
+      width: 100%;
     }
-
-    #karrito {
-        left: auto;
-        position: relative;
-        width: 30%;
-        margin-top: 10px;
+  
+    h1 {
+      font-size: 24px;
     }
-
-    footer {
-        padding: 15px 10px;
+  
+    .eskerreko-gorputza {
+      flex-direction: column;
     }
-
-    .gorputza {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Pantallas medianas (tabletas y dispositivos con pantallas medianas) */
-@media screen and (max-width: 1024px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menua {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    main section,
-    aside {
-        width: 48%; /* Hace que main y aside ocupen la mitad de la pantalla */
-        margin: 10px 0;
-        padding: 10px;
-    }
-
-    .gorputza {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Pantallas grandes */
-@media screen and (min-width: 1200px) {
-    main {
-        display: flex;
-        flex-wrap: nowrap; /* No debería haber ajuste a nuevas filas */
-        justify-content: space-between;
-        max-width: 48;
-    }
-
-    main section,
-    aside {
-        width: 48%; /* Ambos ocupan 48% de la pantalla */
-    }
-
-    .eskuma {
-        display: flex;
-        align-items: center;
-    }
-
-    header img {
-        width: 36.66666666666667%;
-    }
-
-    .menua {
-        display: flex;
-    }
-
-    .menua li {
-        margin-left: 20px;
-    }
-
-    .gorputza {
-        grid-template-columns: repeat(3, 2fr);
-    }
-}
+  }
+  

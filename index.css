@@ -9,7 +9,6 @@ body {
 
 header {
     display: flex;
- /* Corregido padding */
     background: linear-gradient(to right, #11cb39, #2575fc);
     width: 100%;
 }

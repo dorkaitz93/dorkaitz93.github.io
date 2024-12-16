@@ -32,9 +32,9 @@ header img {
     display: flex;
     margin: 0;
     padding-left: 0.4166666666666667%;
+    padding-right: 20.83333333333333%;
+
     
-    width: 100%;
-    gap: 0.75%;
 }
 
 .menua li a {
@@ -45,7 +45,7 @@ header img {
     color: rgb(0, 0, 0);
     font-weight: bold;
     transition: color 1s ease-out;
-    margin-right: 1px;
+    margin-left: 10px;
     
     
 }
@@ -119,4 +119,54 @@ button {
     text-decoration: none;
     display: inline-block;
     
+}
+@media screen and (max-width: 768px) {
+    /* Para pantallas de tablets y móviles en modo apaisado */
+    .menua li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .gorputza div {
+      width: 48%;
+    }
+  
+    .eskerreko-gorputza {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+  
+  @media screen and (max-width: 480px) {
+    /* Para pantallas de móviles */
+    .menua li {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    .gorputza div {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    footer {
+      font-size: 12px;
+    }
+  
+    .eskerreko-gorputza {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    input[type="number"] {
+      width: 50px;
+    }
+  
+    button.gehitu {
+      padding: 5px 8px;
+    }
+ }
 }
