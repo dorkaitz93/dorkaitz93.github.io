@@ -21,6 +21,7 @@ header img {
 
 
 
+
 .eskuma {
     display: flex;
     align-items: center;
@@ -77,6 +78,7 @@ form {
     padding: 0.8333333333333333%;
     background-color: #f9f9f9;
     border-radius: 0.8333333333333333%;
+    border: 1px solid black;
 }
 
 legend {

@@ -96,15 +96,18 @@ footer {
     max-width: 100%;
     grid-column: 1 / span 3; /* Ocupa 3 columnas */
     grid-row: 1 / 2;
-    img{
-        max-width: 100%;
-    }
+    
 }
 
 .erdia {
     grid-row: 1 / 2;
     grid-column: 4 / span 6; /* Comienza en la columna 4 y ocupa 6 columnas */
     max-width: 100%;
+    img{
+        max-width: 30%;
+        background: linear-gradient(to top, white, #bdb436);
+        display: inline-block;
+    }
 }
 
 .right {
@@ -126,6 +129,7 @@ footer {
     .eskerra {
         grid-column: span 3; /* Ocupa 3 columnas */
         grid-row: 1; /* Primera fila */
+
     }
 
     .erdia {
@@ -149,6 +153,10 @@ footer {
     .eskerra {
         grid-column: 1 / -1; /* Ocupa toda la fila */
         grid-row: 1; /* Primera fila */
+        text-align: center;
+        img{
+            width: 50%;
+        }
     }
 
     .erdia {
@@ -158,6 +166,13 @@ footer {
 
     .right {
         grid-column: 1 / -1; /* Ocupa toda la fila */
-        grid-row: 3; /* Tercera fila */
+        grid-row: 3; /* Tercera fila (ahora se asegura que vaya a la última fila) */
+    }
+
+    /* Si tienes más de un <li> o elementos similares, puedes agregar reglas específicas
+    para ajustarlos, por ejemplo: */
+    .right:last-child {
+        grid-row: 3; /* Asegurarse de que el último se quede en la última fila */
     }
 }
+

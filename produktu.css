@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(to top, white, #FFFDD0);
     color: #333;
     line-height: 1.6;
@@ -59,6 +59,7 @@ main {
     width: 48%;
     text-align: center;
     float: left;
+    border: 1px azure;
 
 }
 
@@ -71,12 +72,16 @@ aside {
     width: 47%;
     float: right;
     margin: 1%;
+    text-align: center;
 }
 
 aside img {
     width: 40%;
     display: inline-block;
     padding: 1%;
+    text-align: center;
+    border-radius: 1px; 
+    border: 1px solid black;
 }
 
 aside a {
@@ -95,77 +100,32 @@ button {
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
-    /* Para dispositivos como tablets en modo vertical */
-    .menua {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
+ @media screen and (max-width: 768px) {
+    .gorputza div {
+      width: 50%;
     }
-
+  
     .menua li {
-        display: inline;
-        margin: 10px 0;
+      display: block;
+      margin: 10px 0;
     }
-
-    main, aside {
-        width: 100%;
-        float: none;
+  
+    .eskerreko-gorputza {
+      flex-direction: row;
+      justify-content: space-around;
     }
-
-    header img {
-        width: 50%;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .gorputza div {
+      width: 100%;
     }
-
-    main img {
-        width: 100%;
+  
+    h1 {
+      font-size: 24px;
     }
-
-    aside img {
-        width: 80%;
+  
+    .eskerreko-gorputza {
+      flex-direction: column;
     }
-}
-
-@media screen and (max-width: 480px) {
-    /* Para dispositivos móviles */
-    body {
-        padding: 5px;
-    }
-
-    .menua {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .menua li {
-        display: inline;
-        margin: 8px 0;
-    }
-
-    header img {
-        width: 40%;
-    }
-
-    main, aside {
-        width: 100%;
-        float: none;
-    }
-
-    main img {
-        width: 100%;
-    }
-
-    aside img {
-        width: 80%;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-}
+  }

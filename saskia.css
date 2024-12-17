@@ -125,7 +125,7 @@ button {
     /* Para pantallas de tablets y móviles en modo apaisado */
     .menua li {
       display: block;
-      margin: 10px 0;
+      margin: 5px 0;
     }
   
     .gorputza div {
