@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kontua.css">
+    <link rel="stylesheet" href="css/kontua.css">
     <title>Kontua</title>
 </head>
 <body>
@@ -22,62 +22,81 @@
 </nav>
 <main>
     <h1>Sortu zure kontua</h1>
-    <form>
-        <fieldset class="formulario" >
+    <form action="https://formspree.io/f/xyzyqlva" method="POST">
+        <fieldset class="formulario">
             <legend>Zure datuak</legend>
-            <label>Izena</label>
-            <input type="text"  placeholder="Izena" >
-
-            <label >Abizenak</label>
-            <input type="text"  placeholder="Abizenak" >
-
-            <label>Jaiotze-data</label>
-            <input type="datetime"  placeholder="Data" >
-
-            <label>Helbidea</label>
-            <input type="text" placeholder="Helbidea">
-
-            <label>Herrialdea</label>
-            <input type="text"  placeholder="Herrialdea" >
-            
-            <label>Probintzia</label>
-            <input type="text"  placeholder="Probintzia">
-
-            <label>Telefonoa</label>
-            <input type="tel" id="Telefonoa"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Telefonoa" >
-            
-            <label>Emaila</label>
-            <input type="email"  placeholder="Emaila" >
-
-            <label>Tarjeta(ez da beharrezkoa)</label>
-            <input type="text"  placeholder="Tarjeta">
-
-            <label>CVV</label>
-            <input type="text" inputmode="numeric" placeholder="CVV" min="3" max="3"><br>
-            Zemat animali daukazu etxean?<br>
-            <select size 4>
-                <option >1</option>
-                <option >2</option>
-                <option >3</option>
-                <option >4</option>
+    
+            <label>Izena<br>
+                <input type="text" name="izena" placeholder="Izena" required>
+            </label>
+            <label>Abizenak<br>
+                <input type="text" name="abizenak" placeholder="Abizenak" required>
+            </label>
+    
+            <label>Jaiotze-data<br>
+                <input type="date" name="jaiotze_data" placeholder="Data" required>
+            </label>
+    
+            <label>Helbidea<br>
+                <input type="text" name="helbidea" placeholder="Helbidea" required>
+            </label>
+    
+            <label>Herrialdea<br>
+                <input type="text" name="herrialdea" placeholder="Herrialdea" required>
+            </label>
+    
+            <label>Probintzia<br>
+                <input type="text" name="probintzia" placeholder="Probintzia" required>
+            </label>
+    
+            <label>Telefonoa<br>
+                <input type="tel" name="telefonoa" id="Telefonoa" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Telefonoa">
+            </label>
+    
+            <label>Emaila<br>
+                <input type="email" name="emaila" placeholder="Emaila" >
+            </label>
+    
+            <label>Tarjeta (ez da beharrezkoa)<br>
+                <input type="text" name="tarjeta" placeholder="Tarjeta">
+            </label>
+    
+            <label>CVV<br>
+                <input type="text" name="cvv" inputmode="numeric" placeholder="CVV" min="3" max="3">
+            </label>
+    
+            <br>Zemat animali daukazu etxean?
+            <br>
+            <select name="animali_kopurua" size="4">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <br>Ze animali mota?
+            <br>
+            <select name="animali_mota" size="4">
+                <option>Txakurrak</option>
+                <option>Katuak</option>
+                <option>Txoriak</option>
+                <option>Arrañak</option>
             </select>
             <br>
-            Ze animali mota?
+    
+            <label>
+                <input type="checkbox" name="informazioa"> Doggy shoppeko informazio gehiago jazo nahi dut.
+            </label>
             <br>
-            <select size="4">
-                <option >Txakurrak</option>
-                <option >Katuak</option>
-                <option >Txoriak</option>
-                <option >Arrañak</option>
-            </select>
+    
+            <label>
+                <input type="checkbox" name="baimena"> Nire informazioa DoggyShop base datuan sartzeko baimenda ematen dut.
+            </label>
+    
             <br>
-            <input type="checkbox">Doggy shoppeko informazio gehiago jazo nahi dut.
-            <br>
-            <input type="checkbox">Nire informazioa DoggyShop base datuan sartzeko baimenda ematen dut.
-            <br>
+            <button type="submit">Bidali</button>
         </fieldset>
     </form>
-    <a href="index.html"><button>Bidali</button></a>
+    
   </main>
   <footer>
     <p>&copy; 2024 DoggyShop.inc</p>
