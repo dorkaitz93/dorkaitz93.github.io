@@ -23,7 +23,7 @@
   }
   
   
- .menua {
+.menua {
     list-style: none;
     display: flex;
     margin: 0;
@@ -110,6 +110,9 @@
     color: white;
     padding: 0.8333333333333333%, 0.8333333333333333%; /* Ajustado */
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.3%;
   }
   
   /* Hacer que la página sea responsiva con media queries */

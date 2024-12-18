@@ -81,8 +81,11 @@ footer {
     text-align: center;
     background-color: #2575fc;
     color: white;
+    padding: 0.8333333333333333%, 0.8333333333333333%; /* Ajustado */
     width: 100%;
-    
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.3%;
 }
 
 .row::after {
