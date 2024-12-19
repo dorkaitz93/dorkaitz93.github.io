@@ -70,10 +70,20 @@ footer {
     display: flex;
     justify-content: space-between;
     line-height: 0.3%;
+    margin-top: 0.8333333333333333%;
+    a{
+        font-style: italic;
+        color: white;
+        margin-top: 1%;
+    }
 }
 
 form {
     width: 100%;
+    textarea{
+        width: 81.5%;
+        
+    }
 }
 
 .formulario {

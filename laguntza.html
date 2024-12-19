@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kontua.css">
+    <title>Kontua</title>
+</head>
+<body>
+    <header>
+        <div class="eskerra">
+            <img id="Logo" src="img/logoa transparente.png" alt="Logoa">
+        </div>
+    </header>
+    <nav>
+        <ul class="menua">
+            <li><a href="index.html">Hasiera</a></li>
+            <li><a href="katalogoa.html">Katalogoa</a></li>
+            <li><a href="saskia.html">Saskia</a></li>
+            <li><a href="kontua.html">Kontua </a></li>
+        </ul>
+</nav>
+<main>
+    <h1>Laguntza behar duzu? Bete taula eta gu jarriko gara kontaktuan</h1>
+    <form action="https://formspree.io/f/xbljnjwj" method="POST">
+        <fieldset class="formulario">
+            <legend>Laguntza</legend>  
+            <label>Izena<br>
+                <input type="text" name="izena" placeholder="Izena" >
+            </label>
+            <label>Telefonoa<br>
+                <input type="tel" name="telefonoa" id="Telefonoa" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Telefonoa">
+            </label>         
+            <label>Emaila<br>
+                <input type="email" name="emaila" placeholder="Emaila">
+            </label>
+            <label>Mezua<br>
+                <textarea placeholder="Idatzi zure arazoa" ></textarea>
+            </label>    
+            <button type="submit">Bidali</button>
+        </fieldset>
+    </form>  
+</main>
+<footer>
+    <p>&copy; 2024 DoggyShop.inc</p>
+    <a href="laguntza.html">Jarri kontaktuan</a>
+</footer>
+</body>
+</html>

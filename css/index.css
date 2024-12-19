@@ -9,7 +9,7 @@ body {
 
 header {
     display: flex;
-    background: linear-gradient(to right, #11cb39, #2575fc);
+    background: linear-gradient(to right, #11cb39, #fffDD0,#2575fc);
     width: 100%;
 }
 
@@ -85,9 +85,14 @@ footer {
     padding: 0.8333333333333333%, 0.8333333333333333%; /* Ajustado */
     width: 100%;
     display: flex;
-    
     justify-content: space-between;
     line-height: 0.3%;
+    margin-top: 0.8333333333333333%;
+    a{
+        font-style: italic;
+        color: white;
+        margin-top: 1%;
+    }
 }
 
 .row {

@@ -113,7 +113,13 @@
     display: flex;
     justify-content: space-between;
     line-height: 0.3%;
-  }
+    margin-top: 0.8333333333333333%;
+    a{
+        font-style: italic;
+        color: white;
+        margin-top: 1%;
+    }
+}
   
   /* Hacer que la página sea responsiva con media queries */
   @media screen and (max-width: 768px) {
