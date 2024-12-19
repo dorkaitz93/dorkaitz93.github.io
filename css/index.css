@@ -5,11 +5,12 @@ body {
     line-height: 1.6;
     max-width: 1200px;
     margin: 0 auto;
+    overflow: scroll;
 }
 
 header {
     display: flex;
-    background: linear-gradient(to right, #11cb39, #fffDD0,#2575fc);
+    background: linear-gradient(to right, #11cb39, #2575fc);
     width: 100%;
 }
 

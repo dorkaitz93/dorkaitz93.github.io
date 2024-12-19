@@ -5,6 +5,7 @@ body {
     line-height: 1.6;
     max-width: 1200px;
     margin: 0 auto;
+    overflow: scroll;
 }
 
 
